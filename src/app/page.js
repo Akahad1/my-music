@@ -1,9 +1,12 @@
-import React from 'react';
+
+import Banner from '@/components/Banner/Banner';
+import './globals.css'
 
 const page = () => {
   return (
     <div>
-      <h1 className='text-2xl text-red-700'>HI</h1>
+      <h1 ></h1>
+      <Banner></Banner>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navber1 from "@/Componet/Shared/Navber/Navber1";
+import Navber1 from "@/components/Shared/Navber/Navber1";
+import Header from "@/components/Shared/Header/Header";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,11 @@ export default function RootLayout({ children }) {
         
           <body >
             <div className="grid grid-cols-12">
-              <div className="col-span-2 bg-[#3b3b3b] min-h-screen mt-5"><Navber1></Navber1></div>
-              <div className="col-span-10"> {children}</div>
+              <div className="col-span-2 bg-[#3b3b3b] min-h-screen lg:inline md:inline hidden "><Navber1></Navber1></div>
+              <div className="col-span-10"> 
+              <div><Header></Header></div>
+              {children}
+              </div>
             </div>
            
             </body>

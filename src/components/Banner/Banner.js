@@ -1,18 +1,11 @@
 'use client'
 
-import { useEffect, useState } from "react";
 import Showdata from "./Showdata";
 
 const Banner = () => {
-    const [alldata,setalldata]=useState([])
-    const {data}=alldata;
-    console.log(data)
     
-    useEffect(()=>{
-        fetch('https://api.lyrics.ovh/suggest/e')
-        .then(res=>res.json())
-        .then(data=>setalldata(data))
-    },[])
+
+    
 
     return (
         <div>
@@ -46,6 +39,9 @@ const Banner = () => {
     <div>
      
     </div>
+    </div>
+    <div>
+        <Showdata></Showdata>
     </div>
     
 

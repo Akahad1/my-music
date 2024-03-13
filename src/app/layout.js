@@ -13,12 +13,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark">
       
          
           
         
-          <body >
+          <body  >
             <div className="grid grid-cols-12">
               <div className="col-span-2 bg-[#3b3b3b] min-h-screen lg:inline md:inline hidden "><Navber1></Navber1></div>
               <div className="col-span-10"> 
